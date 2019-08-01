@@ -1,4 +1,7 @@
 <div class='mat-elevation-28'>
+	<mat-form-field>
+		<input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+  </mat-form-field>
   <table mat-table [dataSource]="dataSource" matSort (matSortChange)="sortData($event)">
 
   <!-- Checkbox Column -->
@@ -49,4 +52,4 @@
   </tr>  
 </table>
 <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
-</div> 
+</div>

@@ -43,6 +43,10 @@ export class TableSelectionExample implements OnInit {
      this.dataSource.paginator = this.paginator;
   }
 
+  applyFilter(filterValue: string) {
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
   /** Whether the number of selected elements matches the total number of rows. */
   isAllSelected() {
     console.log("isAllSelected");
