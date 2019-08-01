@@ -5,3 +5,9 @@ table {
   font-size: 14px;
   width: 100%;
 }
+
+td:nth-child(3) {
+  width: 100px;
+  max-width: 100px;
+  color: red;
+}
